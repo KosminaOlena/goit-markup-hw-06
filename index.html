@@ -385,7 +385,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-secondary">
+        <div>
           <p class="footer-invite">Приєднуйтесь</p>
           <ul class="network-list list">
             <li class="network-item">
@@ -420,18 +420,22 @@
         </div>
         <div class="footer-last">
           <p class="footer-invite">Підпишіться на розсилку</p>
-          <input
-            type="email"
-            name="mail"
-            placeholder="E-mail"
-            class="form-sign"
-          />
-          <button type="submit" class="btn-form">
-            Підписатися
-            <svg class="send-icon" width="24" height="24">
-              <use href="./images/icons.svg#send"></use>
-            </svg>
-          </button>
+          <div class="footer-form">
+            <label>
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="form-sign"
+              />
+            </label>
+            <button type="submit" class="btn-form">
+              Підписатися
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
@@ -478,15 +482,19 @@
               class="form-textarea"
             ></textarea>
           </label>
-
-          <label class="form-accept">
-            <input type="checkbox" class="form-checkbox" />
-            <p class="text-accept">
-              Погоджуюся з розсилкою та приймаю
-              <a href="" class="link-check">Умови договору</a>
-            </p>
-          </label>
-          <button type="submit" class="btn-form">Відправити</button>
+          <div>
+            <label class="form-accept">
+              <input type="checkbox" name="accept" class="form-checkbox" />
+              <span class="check-icon"></span>
+              <span class="accept-text"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="" class="link-check">Умови договору</a></span
+              >
+            </label>
+          </div>
+          <button type="submit" class="btn-form modal-submit">
+            Відправити
+          </button>
         </form>
       </div>
     </div>
